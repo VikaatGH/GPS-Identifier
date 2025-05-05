@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your route</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <div id="map-container">
+        <input id="pac-input" type="text" placeholder="Search location..." />
+        <div id="map" class="map"></div>
+        <form class="add-point">
+            <h3>Add a new point</h3>
+            <input type="text" class="stopName" id="stopName" placeholder="Stop name" />
+            <input type="text" id="coordinates" class="coordinates" placeholder="Coordinates" readonly />
+            <button type="button" id="addButton" class="addButton" >Add</button>
+
+        </form>
+    </div>
+    <div class="route">
+            <div class="route-header">
+            <h2>Your route</h2>
+            <div class="icons">
+                <div class="icon-climb"></div>
+                <div class="icon-cycle"></div>
+                <div class="icon-run"></div>
+            </div>
+        </div>
+            <ul class="route-list" id="route-list"></ul>
+            <select id="select-sport" class="select-sport">
+                <option>Walk</option>
+                <option>Cycle</option>
+                <option>Run</option>
+            </select>
+        <button class="saveButton" id="saveButton">Save route</button>
+
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYwpMIY4aSqWWznpSUg0hQu6TZEkF7rac&libraries=places&callback=initMap&loading=async"
+    ></script>
+    
+</body>
+</html>
