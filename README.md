@@ -58,3 +58,9 @@ Once the user reaches the final stop of the route, the display will show a greet
 
 ## Web link
 Here is the website to create the route: https://vikaatgh.github.io./GPS-Identifier/
+
+## Repository navigation
+- The docs folder contains the code for the webpage used to create the route.<br>
+- The code folder stores the Arduino program.<br>
+- The example folder includes the stops.txt file with the route data, as well as a log file that shows all prints to the Serial Monitor during program execution.
+
